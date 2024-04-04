@@ -1,0 +1,147 @@
+/* Global Veriable */
+:root {
+    /* typography */
+    --primary-font: "Montserrat", sans-serif;
+    --headline-font: 'Source Serif Pro', serif;
+    --fw-l: 300;
+    --fw-m: 500;
+    --fw-b: 700;
+    --fs-base: 1rem;
+
+    /* color */
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --tertiary-color: #94d2bd;
+    --background-color: #f8f9fa;
+    --accent-color-bright: #ffc107;
+    --accent-color-dark: red;
+    --neutral-lt-color: #f8f9fa;
+    --neutral-mid-color: #6c757d;
+    --border-radius: 6px;
+    --brow-color: #5b3535;
+    --black-color: #000;
+    --footer-color: #69d709;
+    /* Nested Variable */
+    --header-bgColor: var(var(--neutral-lt-color));
+    --header-textColor: var(var(--tertiary-color));
+
+    /* helper */
+    --spacer: 1rem;
+    --spacer-dbl: calc(var(--spacer) * 2);
+    --border-radius: 6px;
+    --shadow: 0 0 6px rgba(0,0,0..3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #023333;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    color: #ec06c6;
+} 
+
+section{
+    background-color: var(--tertiary-color);
+
+}
+
+section article{
+    background-color: var(--primary-color);
+}
+
+table{
+    border: 3px solid black; 
+    float: right;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-right: 100px;
+    
+
+}
+thead{
+    padding: 10px;
+    margin-top: 10px;
+    color: hwb(12 7% 11%);
+
+}
+
+tbody{
+    padding: 10px;
+    margin-bottom: 30px;
+    color: hsl(347, 83%, 49%);
+}
+th{
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+td{
+    padding: 10px;
+    margin: 10px;
+}
+
+h2{
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+ul {
+    align-items: center;
+    margin-left: 900px;
+    }
+
+#Facebook{
+    background-color: var(--neutral-lt-color);
+    padding: 8px;
+    width: 200px;
+}
+#Gmail{
+    background-color: #69d709;
+    padding: 8px;
+    width: 260px;
+}
+
+#Github{
+    background-color: hsl(165, 91%, 39%);
+    padding: 8px;
+    width: 220px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+
+}
+img{
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+p{
+    margin: var(--spacer);
+    font-weight: bold;
+    padding: 1rem;
+}
+p strong{
+    color: #ec06c6;
+    font-size: xx-large;
+}
+
+.btn{
+      text-decoration: none;
+      color: rgb(45, 11, 240);
+    }    
+
+.btn:hover {
+      background-color: #0f0;
+      color: var(--accent-color-dark);
+  }
+
+footer{
+    background-color: var(--accent-color-bright);
+}
