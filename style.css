@@ -52,6 +52,10 @@ section{
 
 }
 
+h3{
+    color: var(--background-color);
+}
+
 section article{
     background-color: var(--primary-color);
 }
